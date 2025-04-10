@@ -23,6 +23,8 @@ cd ComfyUI/custom-nodes
 git clone https://github.com/RubenAlba95/ruben-bilbox-comfyui.git
 ```
 
+It can also be found in the ComfyUI registry, under ruben-bilbox-comfyui.
+
 ## Nodes
 
 ### Ruben-BilboX's PromptGeek Photo Prompt
