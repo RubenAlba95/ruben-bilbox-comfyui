@@ -1,10 +1,10 @@
-# BilboX's ComfyUI Custom Nodes
+# Ruben-BilboX's ComfyUI Custom Nodes
 
-Various custom nodes for ComfyUI.
+Various custom nodes for ComfyUI, based on the work by Bilbox.
 
 ## Description
 
-This repository will store my custom nodes for [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
+This repository is a modification of [BilboX's ComfyUI Custom Nodes](https://github.com/syllebra/bilbox-comfyui.git), so that they work with the newer versions of [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
 ## Getting Started
 
@@ -20,25 +20,16 @@ This repository will store my custom nodes for [ComfyUI](https://github.com/comf
 
 ```
 cd ComfyUI/custom-nodes
-git clone https://github.com/syllebra/bilbox-comfyui.git
+git clone https://github.com/RubenAlba95/ruben-bilbox-comfyui.git
 ```
 
 ## Nodes
 
-### BilboX's PromptGeek Photo Prompt
-This is a node created from the awesome [PromptGeek's "Creating Photorealistic Images With AI: Using Stable Diffusion"](https://promptgeek.gumroad.com/photoreal) book data. It provides a convenient way to compose photorealistic prompts into ComfyUI.
+### Ruben-BilboX's PromptGeek Photo Prompt
+This is a node created from the awesome [PromptGeek's "Creating Photorealistic Images With AI: Using Stable Diffusion"](https://promptgeek.gumroad.com/photoreal) book data. It provides a convenient way to compose photorealistic prompts into ComfyUI. Now working wiht newer versions of ComfyUI.
 
-![BilboX's PromptGeek Photo Prompt UI](doc/sample_0.jpg)
-
-A preview of the assembled prompt is shown at the bottom.
-
-This plugin offers 2 preview modes for of each prestored style/data: *Tooltip mode* and *Modal mode*
-#### Tooltip mode
-This mode keeps interface compact and offers a preview and a description when hovering a list context menu.
-![BilboX's PromptGeek Photo Prompt Tooltip mode](doc/sample_1.jpg)
-#### Modal mode
-The modal mode shows a fullscreen scrollable modal window for a better view of all options. Just over an element to popup a detailed description and click on it to select and close the window. Hit "escape" to just close.
-![BilboX's PromptGeek Photo Prompt Modal mode](doc/sample_2.jpg)
+![Ruben-BilboX's PromptGeek Photo Prompt UI](doc/sample_0.jpg)
+![BilRuben-BilboX's PromptGeek Photo Prompt Tooltips](doc/sample_1.jpg)
 
 ### Post-Processing
 
@@ -60,10 +51,13 @@ An optinnal parameter is just used to debug and print informations about the lut
 
 
 ## Authors
-* Code: BilboX
+* Code: BilboX, Rubendario Albarran Gonzalez
 * Arts: [@PromptGeek Youtube](https://www.youtube.com/@PromptGeek)
 
 ## Version History
+* 1.1
+    * Modified so that it works with newer versions of ComfyUI
+
 * 1.0.0
     * Fixed various bugs and added to comfy registry
 

@@ -17,29 +17,7 @@ def get_list(data, name, tag="name", can_be_null=True):
         ret.extend([d[tag] for d in data[name] if tag in d])
     return ret
 
-## Don' need anymore, done in frontend
-# def replace_and_combine(json_data, style, subject, framing, setting_background, lighting, camera_angle, camera_properties, film_types, lenses, filters_effects, photographer):
-#     try:
-#         style = "" if style == EMPTY_TEXT else f"{style} photo of "
-#         framing = "" if framing == EMPTY_TEXT else f", {framing}"
-#         lighting = "" if lighting == EMPTY_TEXT else f", {lighting}"
-#         camera_angle = "" if camera_angle == EMPTY_TEXT else f", {camera_angle}"
-#         camera_properties = "" if camera_properties == EMPTY_TEXT else f", {camera_properties}"
-#         film_types = "" if film_types == EMPTY_TEXT else f", {film_types}"
-#         lenses = "" if lenses == EMPTY_TEXT else f", {lenses}"
-#         filters_effects = "" if filters_effects == EMPTY_TEXT else f", {filters_effects}"
-#         photographer = "" if photographer == EMPTY_TEXT else f", in the style of {photographer}"
-
-#         setting_background = "" if setting_background == "" else f", {setting_background}"
-
-#         return f"{style}{subject}{framing}{setting_background}{lighting}{camera_angle}{camera_properties}{film_types}{lenses}{filters_effects}{photographer}"
-#         #raise ValueError(f"No template found with name '{template_name}'.")
-
-#     except Exception as e:
-#         print(f"An error occurred: {str(e)}")
-
-
-class BilboXPhotoPrompt:
+class RubenBilboXPhotoPrompt:
 
     def __init__(self):
         pass
@@ -61,7 +39,6 @@ class BilboXPhotoPrompt:
         #  [SETTING/BACKGROUND], [LIGHTING],[CAMERA ANGLE], [CAMERA PROPERTIES],in style of [PHOTOGRAPHER]"
         return {
             "required": {
-                "modal_combos": ("BOOLEAN", {"default":True} ),
                 "style": ((get_list(self.json_data,"style")), ),
                 "subject": ("STRING", {"default": "", "multiline": True,"placeholder": "[SUBJECT], [IMPORTANT FEATURE], [MORE DETAILS], [POSE OR ACTION]"}),
                 "framing": ((get_list(self.json_data,"framing")), ),
@@ -84,7 +61,7 @@ class BilboXPhotoPrompt:
     FUNCTION = 'prompt_styler'
     CATEGORY = 'BilboX'
 
-    def prompt_styler(self, modal_combos, style, subject, framing,
+    def prompt_styler(self, style, subject, framing,
                       setting_background, lighting, camera_angle,
                       camera_properties, film_types, lenses,
                       filters_effects, photographers,

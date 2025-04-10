@@ -1,9 +1,9 @@
-from .bilbox_photo_prompt import BilboXPhotoPrompt
+from .bilbox_photo_prompt import RubenBilboXPhotoPrompt
 from .bilbox_post_processing import BilboXLut, BilboXVignette
 import os
 
 NODE_CLASS_MAPPINGS = {
-    "BilboXPhotoPrompt": BilboXPhotoPrompt,
+    "BilboXPhotoPrompt": RubenBilboXPhotoPrompt,
     "BilboXVignette": BilboXVignette,
     "BilboXLut": BilboXLut,
 }
@@ -11,7 +11,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "BilboXLut": "BilboX post-processing LUT",
     "BilboXVignette": "BilboX post-processing vignette effect",
-    "BilboXPhotoPrompt": "BilboX PromptGeek Photo Prompt",
+    "RubenBilboXPhotoPrompt": "Ruben-BilboX PromptGeek Photo Prompt",
 }
 
 # Expand Server api
