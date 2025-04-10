@@ -3,7 +3,7 @@ from .bilbox_post_processing import BilboXLut, BilboXVignette
 import os
 
 NODE_CLASS_MAPPINGS = {
-    "BilboXPhotoPrompt": RubenBilboXPhotoPrompt,
+    "RubenBilboXPhotoPrompt": RubenBilboXPhotoPrompt,
     "BilboXVignette": BilboXVignette,
     "BilboXLut": BilboXLut,
 }
