@@ -1166,7 +1166,7 @@ const photo_data = {
 
 // Inverts the scrolling of context menus
 const ActivateNodeType = "BilboXPhotoPrompt"
-const relPath = "/extensions/bilbox-comfyui"
+const relPath = "/extensions/ruben-bilbox-comfyui"
 const id = "BilboX.PromptGeekContextMenuEnhance";
 
 
